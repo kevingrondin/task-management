@@ -1,0 +1,36 @@
+@hostname = http://localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+### tasks
+GET {{host}}/tasks
+
+### tasks by id
+GET {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199
+
+### delete tasks by id
+DELETE {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199
+
+### Edit Status of task
+PATCH {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199/status
+Content-Type: {{contentType}}
+
+{
+    "status": "IN_PROGRESS"
+}
+
+### Create Task
+@title = Clean my room
+@description = Lots of cleanning has to be done
+@status = OPEN
+
+POST {{host}}/tasks HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+    "title": "{{title}}",
+    "description": "{{description}}",
+    "status": "{{status}}"
+}
+
