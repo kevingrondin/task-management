@@ -1,0 +1,21 @@
+@hostname = http://localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+### tasks
+GET {{host}}/tasks
+
+### Create Task
+@title = Clean my room
+@description = Lots of cleanning has to be done
+@status = OPEN
+
+POST {{host}}/tasks HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+    "title": "{{title}}",
+    "description": "{{description}}",
+    "status": "{{status}}"
+}

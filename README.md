@@ -21,3 +21,5 @@ nest g service tasks --no-spec
 ```
 
 __controller__ get data from __service__
+
+Create model and add to controller and service
