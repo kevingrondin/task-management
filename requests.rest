@@ -7,10 +7,18 @@
 GET {{host}}/tasks
 
 ### tasks by id
-GET {{host}}/tasks/fd473255-971c-4fb4-befb-574045791da5
+GET {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199
 
 ### delete tasks by id
-DELETE {{host}}/tasks/0b68d5e6-69e4-4bb9-96b0-59316a312b15
+DELETE {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199
+
+### Edit Status of task
+PATCH {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199/status
+Content-Type: {{contentType}}
+
+{
+    "status": "IN_PROGRESS"
+}
 
 ### Create Task
 @title = Clean my room
@@ -25,3 +33,4 @@ Content-Type: {{contentType}}
     "description": "{{description}}",
     "status": "{{status}}"
 }
+
