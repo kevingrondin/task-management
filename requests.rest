@@ -6,8 +6,11 @@
 ### tasks
 GET {{host}}/tasks
 
-### tasks
+### tasks by id
 GET {{host}}/tasks/fd473255-971c-4fb4-befb-574045791da5
+
+### delete tasks by id
+DELETE {{host}}/tasks/0b68d5e6-69e4-4bb9-96b0-59316a312b15
 
 ### Create Task
 @title = Clean my room
