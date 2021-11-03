@@ -11,3 +11,13 @@ keep only __app.module.ts__ and __main.ts__ on src folder and adapt __app.module
 ```Shell
 yarn start:dev
 ```
+
+## Module Task
+
+```Shell
+nest g module tasks
+nest g controller tasks --no-spec
+nest g service tasks --no-spec
+```
+
+__controller__ get data from __service__
