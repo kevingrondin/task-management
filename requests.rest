@@ -6,6 +6,9 @@
 ### tasks
 GET {{host}}/tasks
 
+### tasks
+GET {{host}}/tasks/fd473255-971c-4fb4-befb-574045791da5
+
 ### Create Task
 @title = Clean my room
 @description = Lots of cleanning has to be done
