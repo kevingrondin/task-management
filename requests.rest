@@ -8,8 +8,8 @@ GET {{host}}/tasks
 
 ### tasks with filter
 GET {{host}}/tasks
-    ?status=OPEN
-    &search=room
+    ?status=""
+    &search=""
 
 ### tasks by id
 GET {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199
@@ -34,7 +34,7 @@ POST {{host}}/tasks HTTP/1.1
 Content-Type: {{contentType}}
 
 {
-    "title": "{{title}}",
+    "title": "",
     "description": "{{description}}",
     "status": "{{status}}"
 }
