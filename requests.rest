@@ -6,6 +6,11 @@
 ### tasks
 GET {{host}}/tasks
 
+### tasks with filter
+GET {{host}}/tasks
+    ?status=OPEN
+    &search=room
+
 ### tasks by id
 GET {{host}}/tasks/7383ff05-3a64-4cdd-b026-40f2434ec199
 
