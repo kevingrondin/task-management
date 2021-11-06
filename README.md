@@ -23,3 +23,20 @@ nest g service tasks --no-spec
 __controller__ get data from __service__
 
 Create model and add to controller and service
+
+## Validation
+
+```Shell
+yarn add class-validator class-transformer
+```
+
+## Persist data
+
+```Shell
+docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+```
+
+```Shell
+yarn add typeorm @nestjs/typeorm pg
+yarn add rxjs@^7
+```
