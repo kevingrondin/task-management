@@ -8,7 +8,7 @@ GET {{host}}/tasks
 
 ### tasks with filter
 GET {{host}}/tasks
-    ?status="TEST"
+    ?status="OPEN"
     &search=""
 
 ### tasks by id
